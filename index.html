@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Mikroways reveal.js theme demo</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./dist/reset.css" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./_assets/theme/mikroways.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/vs2015.css" />
+
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+<!-- .slide: class="main-cover" data-transition="zoom" -->
+
+# reveal.js
+## Mikroways theme demo
+</script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="dark-logo-left" -->
+
+## Dark with botom left logo
+
+* Show how lists are shown
+* Show blockquotes styles
+* Other slides styles
+* More styles
+* Links are [like this](https://mikroways.net)
+</script></section><section data-markdown><script type="text/template"><!-- .slide: class="dark-logo-center" -->
+
+# Dark with bottom cenetered logo
+</script></section><section data-markdown><script type="text/template"># This is a normal slide
+
+* In normal styles background is light
+* Links are [like this](https://mikroways.net)
+
+> Blockquotes are shown like this</script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="dark-logo-center" -->
+## Dark with blockquote
+
+This is a sample text
+
+> And this is inside a blockquote
+</script></section><section ><section data-markdown><script type="text/template"># Text in columns
+
+This text is outside columns, but the following text is placed inside columns:
+
+<div class="container">
+<div class="col">
+
+### Column 1
+
+This is a text inside column 1. As you can see, text flows but don't overlaps
+with next column
+</div>
+
+<div class="col">
+
+### Column 2
+
+* Item 1
+* Item 2
+</div>
+</div>
+</script></section><section data-markdown><script type="text/template"># Text in small columns
+
+This text is outside columns, but the following text is placed inside columns:
+
+<div class="container">
+<div class="col small">
+
+### Small Column 1
+
+This is a text inside column 1. As you can see, text flows but don't overlaps
+with next column
+</div>
+
+<div class="col">
+
+### Column 2
+
+* Item 1
+* Item 2
+</div>
+</div>
+</script></section></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        slideNumber: true,
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"concave","transitionSpeed":"slow"}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
