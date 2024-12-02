@@ -78,7 +78,7 @@ $whiteLogo: 'iVBORw0KGgoAAAANSUhEUgAAAyAAAAEMCAMAAAALXyI+AAAA0GVYSWZJSSoACAAAAAo
 // MAIN COVER
 .reveal .slide-background.main-cover {
   background: url('data:image/png;base64,#{$fullColorBackground}') top left;
-  background-size: "100% auto";
+  background-size: cover;
   background-color: #1b2d53;
   background-repeat: no-repeat;
 
@@ -94,11 +94,17 @@ $whiteLogo: 'iVBORw0KGgoAAAANSUhEUgAAAyAAAAEMCAMAAAALXyI+AAAA0GVYSWZJSSoACAAAAAo
       bottom: 20px;
       left: 20px;
   }
+
+  @media screen and (min-width:300px) and (max-width:800px) {
+    &:before {
+      background-size: auto 50%;
+    }
+  }
 }
 .slides section.main-cover {
   h1, h2, h3, h4 {
     text-align: right;
-    color: #fff;
+    color: red;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
   }
 }
