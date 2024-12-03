@@ -38,5 +38,3 @@ function playAscinema(event) {
 
 Reveal.on('ready', setAsciinema);
 Reveal.on('slidechanged', playAscinema);
-
-options.plugins.push(RevealMermaid);

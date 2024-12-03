@@ -2,8 +2,6 @@
 title: Mikroways reveal.js theme demo
 highlightTheme: vs2015
 scripts:
-  - https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin@2.1.0/plugin/mermaid/mermaid.min.js
-  - https://cdn.jsdelivr.net/npm/asciinema-player@3.6.3/dist/bundle/asciinema-player.min.js
   - example/js/script.js
 css:
   - https://cdn.jsdelivr.net/npm/asciinema-player@3.6.3/dist/bundle/asciinema-player.min.css
@@ -223,9 +221,7 @@ Reveal.on('slidechanged', playAscinema);
 
 ## Git graphs
 
-<div class="mermaid">
-  <pre>
-    %%{init: { }}}%%
+```mermaid
     gitGraph
       commit id: "Commit inicial"
       branch develop
@@ -237,81 +233,66 @@ Reveal.on('slidechanged', playAscinema);
       checkout develop
       commit
       commit
-  </pre>
-</div>
+```
+----
+## Othe git example
 
+```mermaid
+    gitGraph
+      commit tag: "Commit inicial"
+      branch develop
+      checkout develop
+      commit
+      branch feature/add-docs
+      commit
+      checkout develop
+      merge feature/add-docs
+      commit
+      branch feature/db-model
+      commit
+      checkout feature/db-model
+      commit
+      checkout develop
+      merge feature/db-model
+      commit
+
+```
 ----
 
 ## Or mindmaps
 
-<div class="mermaid">
-  <pre>
-    %%{init: { }}}%%
-      mindmap
-        root((pod))
-          {{Container}}
-              Secret
-              ::icon(fa fa-key)
-              Configmap
-              ::icon(fa fa-file)
-              PersistentVolume
-              ::icon(fa fa-hdd)
-                  (PersistentVolumeClaim)
-          [Replicaset]
-            (Deployment)
-          (Statefulset)
-          (Daemonset)
-          (Job)
-            (Cronjob)
-          )Service(
-              )Ingress(
-  </pre>
-</div>
+```mermaid
+mindmap
+  root((pod))
+    {{Container}}
+        Secret
+        ::icon(fa fa-key)
+        Configmap
+        ::icon(fa fa-file)
+        PersistentVolume
+        ::icon(fa fa-hdd)
+            (PersistentVolumeClaim)
+    [Replicaset]
+      (Deployment)
+    (Statefulset)
+    (Daemonset)
+    (Job)
+       (Cronjob)
+    (Service(
+        )Ingress(
+```
 
 ----
 ## Even timelines
 
 
-<div class="mermaid shadow">
-  <pre>
-    %%{init: { }}}%%
+```mermaid
     timeline
       1979: chroot en Unix
       2004: Solaris Containers
       2005: Open VZ
       2006: Process containers (cgroups)
       2008: LXC
-  </pre>
-</div>
+```
 
-> Note shadow is added
 
-----
-
-## Mermaid integration
-
-Configure reveal-md to use mermaid plugin
-
-<pre>
-<code class="yaml hljs" data-line-numbers="5,6" >
-title: Some title
-highlightTheme: vs2015
-scripts:
-  - https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin@2.1.0/plugin/mermaid/mermaid.min.js
-  - example/js/script.js
-...
-</code>
-</pre>
-
-> Note mermaid-plugin version 2.1.0
-
-----
-## What is js/script.js
-
-As simple as
-
-<pre>
-<code class="js hljs">
-options.plugins.push(RevealMermaid);
-</code>
-</pre>

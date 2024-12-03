@@ -5,8 +5,8 @@
  */
 
 // Default mixins and settings -----------------
-@import "../../node_modules/reveal-md/node_modules/reveal.js/css/theme/template/mixins";
-@import "../../node_modules/reveal-md/node_modules/reveal.js/css/theme/template/settings";
+@import "../../node_modules/reveal.js/css/theme/template/mixins";
+@import "../../node_modules/reveal.js/css/theme/template/settings";
 // ---------------------------------------------
 
 
@@ -52,7 +52,7 @@ $whiteLogo: 'iVBORw0KGgoAAAANSUhEUgAAAyAAAAEMCAMAAAALXyI+AAAA0GVYSWZJSSoACAAAAAo
 
 
 // Theme template ------------------------------
-@import "../../node_modules/reveal-md/node_modules/reveal.js/css/theme/template/theme";
+@import "../../node_modules/reveal.js/css/theme/template/theme";
 // ---------------------------------------------
 
 .reveal a {
@@ -235,9 +235,15 @@ $whiteLogo: 'iVBORw0KGgoAAAANSUhEUgAAAyAAAAEMCAMAAAALXyI+AAAA0GVYSWZJSSoACAAAAAo
     font-size: 0.7em;
   }
 
-  pre code {
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+  pre {
+    code {
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    }
+    code.mermaid {
+      text-align: center;
+    }
   }
+
 }

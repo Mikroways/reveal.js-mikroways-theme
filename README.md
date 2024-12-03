@@ -14,7 +14,7 @@ npm i
 Then start editing `theme/source/mikroways.scss` while executing:
 
 ```
-npm run saas
+npm run sass
 ```
 
 > This command will regenerate `theme/mikroways.css` each time source sass file
