@@ -338,7 +338,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 
 .slides section.main-cover h1, .slides section.main-cover h2, .slides section.main-cover h3, .slides section.main-cover h4 {
   text-align: right;
-  color: red;
+  color: #fff;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
 
 .reveal .slide-background.dark-logo-center {
