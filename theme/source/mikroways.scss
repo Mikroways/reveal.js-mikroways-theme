@@ -244,6 +244,9 @@ $whiteLogo: 'iVBORw0KGgoAAAANSUhEUgAAAyAAAAEMCAMAAAALXyI+AAAA0GVYSWZJSSoACAAAAAo
     code.mermaid {
       text-align: center;
     }
+    code.mermaid svg {
+      max-height: 390px;
+    }
   }
 
 }
