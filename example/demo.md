@@ -50,21 +50,32 @@ This is a sample text
 
 This text is outside columns, but the following text is placed inside columns:
 
-<div class="container">
+<div class="container small">
 <div class="col">
 
 ### Column 1
 
-This is a text inside column 1. As you can see, text flows but don't overlaps
-with next column
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+```
+ls
+```
 </div>
 
 <div class="col">
 
 ### Column 2
 
-* Item 1
-* Item 2
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+```
+ls
+```
+
 </div>
 </div>
 
@@ -90,6 +101,39 @@ with next column
 * Item 2
 </div>
 </div>
+----
+# Code in columns
+
+This text is outside columns, but the following text is placed inside columns:
+
+<div class="container">
+<div class="col">
+
+### Column 1
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello world, from Mikroways\n");
+    return 0;
+}
+```
+</div>
+
+<div class="col">
+
+### Column 2
+
+```ruby
+hello="Hello"
+world="world"
+puts "#{hello} #{world}! from Mikroways"
+```
+</div>
+</div>
+
 ---
 
 # Shadows

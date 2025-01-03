@@ -15,7 +15,9 @@ Then start editing `theme/source/mikroways.scss` while executing:
 
 ```
 npm run sass
+npm run sass -- --watch
 ```
+
 
 > This command will regenerate `theme/mikroways.css` each time source sass file
 > is modified.
