@@ -75,6 +75,17 @@ $whiteLogo: 'iVBORw0KGgoAAAANSUhEUgAAAyAAAAEMCAMAAAALXyI+AAAA0GVYSWZJSSoACAAAAAo
 }
 */
 
+.slides section {
+
+  .left-aligned {
+    text-align: left;
+  }
+
+  .right-aligned {
+    text-align: right;
+  }
+}
+
 // MAIN COVER
 .reveal .slide-background.main-cover {
   background: url('data:image/png;base64,#{$fullColorBackground}') top left;

@@ -102,6 +102,23 @@ with next column
 </div>
 </div>
 ----
+# Text alignement
+
+Normal text is centered
+
+----
+# But using left-aligned...
+
+<div class="left-aligned">
+Normal text is now left aligned
+</div>
+----
+# Or right-aligned...
+
+<div class="right-aligned">
+Normal text is now right aligned
+</div>
+----
 # Code in columns
 
 This text is outside columns, but the following text is placed inside columns:
